@@ -8,4 +8,35 @@
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
-  
+
+// custom header (My Hub)
+.nhsuk-header {
+    background-color: #035db8;
+
+    .nhsuk-header__service-name {
+        padding-left: 0;
+    }
+    .nhsuk-header__container {
+        margin: 0 32px;
+        padding-bottom: 0;
+    }
+    .nhsuk-navigation {
+        border: none;
+        margin: 0 32px;
+    }
+}
+
+// custom footer (My Hub)
+.nhsuk-footer-container {
+    background-color: #035db8;
+
+    .nhsuk-footer {
+        background-color: #035db8;
+        color: #ffffff;
+        margin: 0 32px;
+        
+        a {
+            color: #ffffff;
+        }
+    }
+}
