@@ -9075,6 +9075,7 @@ button.nhsuk-back-link__link {
 .nhsuk-header .nhsuk-navigation {
   border: none;
   margin: 0 32px;
+  max-width: 1140px;
 }
 
 .nhsuk-footer-container {
