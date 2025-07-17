@@ -24,6 +24,14 @@
         border: none;
         margin: 0 32px;
         max-width: 1140px;
+
+        .nhsuk-header__navigation-link {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 
@@ -38,6 +46,11 @@
         
         a {
             color: #ffffff;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }

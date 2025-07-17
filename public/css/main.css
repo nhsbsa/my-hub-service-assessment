@@ -9077,6 +9077,12 @@ button.nhsuk-back-link__link {
   margin: 0 32px;
   max-width: 1140px;
 }
+.nhsuk-header .nhsuk-navigation .nhsuk-header__navigation-link {
+  text-decoration: none;
+}
+.nhsuk-header .nhsuk-navigation .nhsuk-header__navigation-link:hover {
+  text-decoration: underline;
+}
 
 .nhsuk-footer-container {
   background-color: #035db8;
@@ -9088,4 +9094,8 @@ button.nhsuk-back-link__link {
 }
 .nhsuk-footer-container .nhsuk-footer a {
   color: #ffffff;
+  text-decoration: none;
+}
+.nhsuk-footer-container .nhsuk-footer a:hover {
+  text-decoration: underline;
 }
