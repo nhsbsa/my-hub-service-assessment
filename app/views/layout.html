@@ -16,58 +16,78 @@
 <!-- Edit the header -->
 <!-- Header code examples can be found at https://service-manual.nhs.uk/design-system/components/header -->
 {% block header %}
+<div class="my-hub-nav">
+    <ul class="nhsuk-list">
+        <li><a href="#">My Hub</a></li>
+        <li><a class="chevron" href="#">My Organisation</a></li>
+        <li><a class="chevron" href="#">My Workplace</a></li>
+        <li><a class="chevron" href="#">My Employment</a></li>
+        <li><a class="chevron" href="#">My Learning</a></li>
+        <li><a class="chevron" href="#">My IT</a></li>
+        <li><a class="chevron" href="#">My Networks</a></li>
+        <li><a class="chevron" href="#">Directorates</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Advanced Search</a></li>
+    </ul>
+</div>
 <header class="nhsuk-header" role="banner">
 
-    <div class="nhsuk-header__container">
-      <div class="nhsuk-header__logo"><a class="nhsuk-header__link nhsuk-header__link--service " href="/" aria-label="NHS homepage">
-          <span class="nhsuk-header__service-name">
-            NHSBSA Service Assessments
-          </span> </a> </div>
-      <div class="nhsuk-header__content" id="content-header">
-        <div class="nhsuk-header__search">
-          <div class="nhsuk-header__search-wrap" id="wrap-search">
-            
-          </div>
+    <div class="logo"><a aria-label="My Hub home" data-navigationcomponent="SiteHeader"><img class="" alt="" src="https://nhsbsauk.sharepoint.com.mcas.ms/sites/MyHub/_api/siteiconmanager/getsitelogo?type='1'&amp;McasCtx=1" style="min-height: 0px; min-width: 0px;"></a></div>
+
+    <div class="content">
+        <div class="nhsuk-header__container">
+        <div class="nhsuk-header__logo"><a class="nhsuk-header__link nhsuk-header__link--service " href="/" aria-label="NHS homepage">
+            <span class="nhsuk-header__service-name">
+                NHSBSA Service Assessments
+            </span> </a> </div>
+        <div class="nhsuk-header__content" id="content-header">
+            <div class="nhsuk-header__search">
+            <div class="nhsuk-header__search-wrap" id="wrap-search">
+                
+            </div>
+            </div>
         </div>
-      </div>
+        </div>
+    
+        <div class="nhsuk-navigation-container">
+        <nav class="nhsuk-navigation" id="header-navigation" role="navigation" aria-label="Primary navigation">
+            <ul class="nhsuk-header__navigation-list">
+            <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="index">
+                Home
+                </a>
+            </li>
+            <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="preparing-for-an-assessment">
+                Preparing for an assessment
+                </a>
+            </li>
+            <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="preparing-to-be-an-assessor">
+                Preparing to be an assessor
+                </a>
+            </li>
+            <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="book-an-assessment">
+                Book an assessment
+                </a>
+            </li>
+            <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="apply-to-be-an-assessor">
+                Apply to become an assessor
+                </a>
+            </li>
+            <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="previous-assessments">
+                Previous assessments
+                </a>
+            </li>
+            </ul>
+        </nav>
+        </div>
     </div>
-  
-    <div class="nhsuk-navigation-container">
-      <nav class="nhsuk-navigation" id="header-navigation" role="navigation" aria-label="Primary navigation">
-        <ul class="nhsuk-header__navigation-list">
-          <li class="nhsuk-header__navigation-item">
-            <a class="nhsuk-header__navigation-link" href="index">
-              Home
-            </a>
-          </li>
-          <li class="nhsuk-header__navigation-item">
-            <a class="nhsuk-header__navigation-link" href="preparing-for-an-assessment">
-              Preparing for an assessment
-            </a>
-          </li>
-          <li class="nhsuk-header__navigation-item">
-            <a class="nhsuk-header__navigation-link" href="preparing-to-be-an-assessor">
-              Preparing to be an assessor
-            </a>
-          </li>
-          <li class="nhsuk-header__navigation-item">
-            <a class="nhsuk-header__navigation-link" href="book-an-assessment">
-              Book an assessment
-            </a>
-          </li>
-          <li class="nhsuk-header__navigation-item">
-            <a class="nhsuk-header__navigation-link" href="apply-to-be-an-assessor">
-              Apply to become an assessor
-            </a>
-          </li>
-          <li class="nhsuk-header__navigation-item">
-            <a class="nhsuk-header__navigation-link" href="previous-assessments">
-              Previous assessments
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    
   </header>
 {% endblock %}
 

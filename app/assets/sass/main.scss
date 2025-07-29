@@ -9,6 +9,39 @@
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
 
+// custom my hub top nav
+.my-hub-nav {
+    background-color: rgb(0, 85, 165);
+    ul {
+        margin: 0 22px;
+
+        li {
+            display: inline-block;
+            margin-bottom: 0;
+            padding: 10px;
+            
+            a {
+                color: #ffffff;
+                font-size: 16px;
+                text-decoration: none;
+            }
+        }
+    }
+} 
+
+.chevron::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg);
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+
 // custom header (My Hub)
 .nhsuk-header {
     background-color: #035db8;
@@ -32,6 +65,14 @@
                 text-decoration: underline;
             }
         }
+    }
+    .logo {
+        display: inline-block;
+        margin: 0 32px;
+    }
+
+    .content {
+        display: inline-block;
     }
 }
 
