@@ -29,15 +29,13 @@
 {% block content %}
 <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-three-quarters">
-
-        <h1 class="nhsuk-heading-xl">
-            Why we do mock assessments
-        </h1>
+		<h1 class="nhsuk-heading-xl">Why we do mock assessments</h1>
 
         <p class="nhsuk-u-margin-bottom-0">Introduction text - Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Alias illo id dolor quam quas
             vero assumenda perferendis cum exercitationem reiciendis. Placeat harum illum consequatur incidunt sit
-            voluptatum mollitia qui ea.</p>
+            voluptatum mollitia qui ea.
+		</p>
     </div>
 </div>
 
@@ -58,49 +56,31 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint perferendis, delectus odio modi dolor minus illo iste? Neque non suscipit velit, laudantium quas voluptas iure qui nam, ipsam exercitationem provident.</p>
     </div>
 </div>
+
 <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-full">
         <hr>
         <ul class="nhsuk-grid-row nhsuk-card-group">
             <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-
-                <div class="nhsuk-card nhsuk-card--clickable">
-                    <div class="nhsuk-card__content nhsuk-card__content--primary">
-                        <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link"
-                                href="#">Prepare for an assessment</a> </h2>
-                        <p class="nhsuk-card__description">A quick guide for people who have care and support needs and
-                            their carers</p> <svg class="nhsuk-icon" xmlns="http://www.w3.org/2000/svg" width="27"
-                            height="27" aria-hidden="true" focusable="false">
-                            <circle cx="13.333" cy="13.333" r="13.333" fill="" />
-                            <g fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"
-                                stroke-width="2.667">
-                                <path d="M15.438 13l-3.771 3.771" />
-                                <path d="M11.667 9.229L15.438 13" />
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-
+				{{ card({
+					primary: true,
+					clickable: true,
+					href: "#",
+					heading: "Prepare for an assessment",
+					headingSize: "m",
+					description: "A quick guide for people who have care and support needs and their carers"
+				}) }}
             </li>
+
             <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-
-                <div class="nhsuk-card nhsuk-card--clickable">
-                    <div class="nhsuk-card__content nhsuk-card__content--primary">
-                        <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link"
-                                href="#">Book a mock assessment</a> </h2>
-                        <p class="nhsuk-card__description">A quick guide for people who have care and support needs and
-                            their carers</p> <svg class="nhsuk-icon" xmlns="http://www.w3.org/2000/svg" width="27"
-                            height="27" aria-hidden="true" focusable="false">
-                            <circle cx="13.333" cy="13.333" r="13.333" fill="" />
-                            <g fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"
-                                stroke-width="2.667">
-                                <path d="M15.438 13l-3.771 3.771" />
-                                <path d="M11.667 9.229L15.438 13" />
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-
+				{{ card({
+					primary: true,
+					clickable: true,
+					href: "#",
+					heading: "Book a mock assessment",
+					headingSize: "m",
+					description: "A quick guide for people who have care and support needs and their carers"
+				}) }}
             </li>
         </ul>
     </div>

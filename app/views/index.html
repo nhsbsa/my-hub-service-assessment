@@ -47,94 +47,89 @@
     <div class="nhsuk-grid-column-three-quarters">
         <ul class="nhsuk-grid-row nhsuk-card-group">
             <li class="nhsuk-grid-column-full nhsuk-card-group__item">
-
-                <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
-                    <div class="nhsuk-card__content nhsuk-card__content--secondary">
-                        <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="#">Book a
-                                mock assessment</a> </h2>
-                        <p class="nhsuk-card__description">Services the NHS provides if you need urgent or emergency
-                            medical help</p>
-                    </div>
-                </div>
-
+                {{ card({
+                    clickable: true,
+                    secondary: true,
+                    href: "#",
+                    heading: "Book a mock assessment",
+                    headingSize: "m",
+                    description: "Use our service finder to find other health services"
+                }) }}
             </li>
+
             <li class="nhsuk-grid-column-full nhsuk-card-group__item">
-
-                <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
-                    <div class="nhsuk-card__content nhsuk-card__content--secondary">
-                        <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="#">Book an
-                                assessment</a> </h2>
-                        <p class="nhsuk-card__description">Services the NHS provides if you need urgent or emergency
-                            medical help</p>
-                    </div>
-                </div>
-
+                {{ card({
+                    clickable: true,
+                    secondary: true,
+                    href: "#",
+                    heading: "Book an assessment",
+                    headingSize: "m",
+                    description: "Use our service finder to find other health services"
+                }) }}
             </li>
+
             <li class="nhsuk-grid-column-full nhsuk-card-group__item">
-
-                <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
-                    <div class="nhsuk-card__content nhsuk-card__content--secondary">
-                        <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="#">Apply to
-                                become an assessor</a> </h2>
-                        <p class="nhsuk-card__description">Services the NHS provides if you need urgent or emergency
-                            medical help</p>
-                    </div>
-                </div>
-
+                {{ card({
+                    clickable: true,
+                    secondary: true,
+                    href: "#",
+                    heading: "Apply to become an assessor",
+                    headingSize: "m",
+                    description: "Use our service finder to find other health services"
+                }) }}
             </li>
         </ul>
     </div>
     <div class="nhsuk-grid-column-one-quarter">
         <h2 class="nhsuk-heading-m">Featured</h2>
         <ul class="nhsuk-list">
-            <li><a href="#">Featured link</a></li>
-            <li><a href="#">Featured link</a></li>
-            <li><a href="#">Featured link</a></li>
+            <li><a href="#" class="nhsuk-link nhsuk-link--no-visited-state">Featured link</a></li>
+            <li><a href="#" class="nhsuk-link nhsuk-link--no-visited-state">Featured link</a></li>
+            <li><a href="#" class="nhsuk-link nhsuk-link--no-visited-state">Featured link</a></li>
         </ul>
     </div>
 </div>
+
 <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-full">
-
         <ul class="nhsuk-grid-row nhsuk-card-group">
             <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
-
-                <div class="nhsuk-card nhsuk-card--clickable"> <img class="nhsuk-card__img"
-                        src="https://assets.nhs.uk/prod/images/A_0218_exercise-main_FKW1X7.width-690.jpg" alt="">
-                    <div class="nhsuk-card__content">
-                        <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="why-mock-assessment">Why we do
-                                mock assessments</a> </h2>
-                        <p class="nhsuk-card__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Quas perferendis rerum ipsum ad, distinctio exercitationem.</p>
-                    </div>
-                </div>
-
-
+                {{ card({
+                image: {
+                    src: "https://assets.nhs.uk/prod/images/A_0218_exercise-main_FKW1X7.width-690.jpg"
+                },
+                clickable: true,
+                href: "why-mock-assessment",
+                heading: "Why we do mock assessments",
+                headingSize: "m",
+                description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas perferendis rerum ipsum ad, distinctio exercitationem"
+                }) }}
             </li>
+
             <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
-
-                <div class="nhsuk-card nhsuk-card--clickable"> <img class="nhsuk-card__img"
-                        src="https://assets.nhs.uk/prod/images/A_0218_exercise-main_FKW1X7.width-690.jpg" alt="">
-                    <div class="nhsuk-card__content">
-                        <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="#">NHS and
-                                GDS service standards</a> </h2>
-                        <p class="nhsuk-card__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Quas perferendis rerum ipsum ad, distinctio exercitationem.</p>
-                    </div>
-                </div>
-
+                {{ card({
+                image: {
+                    src: "https://assets.nhs.uk/prod/images/A_0218_exercise-main_FKW1X7.width-690.jpg"
+                },
+                clickable: true,
+                href: "#",
+                heading: "NHS and GDS service standards",
+                headingSize: "m",
+                description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas perferendis rerum ipsum ad, distinctio exercitationem"
+                }) }}
             </li>
-            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
 
-                <div class="nhsuk-card nhsuk-card--clickable"> <img class="nhsuk-card__img"
-                        src="https://assets.nhs.uk/prod/images/A_0218_exercise-main_FKW1X7.width-690.jpg" alt="">
-                    <div class="nhsuk-card__content">
-                        <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="#">Agile
-                                Phases</a> </h2>
-                        <p class="nhsuk-card__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Quas perferendis rerum ipsum ad, distinctio exercitationem.</p>
-                    </div>
-                </div>
+            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+                {{ card({
+                image: {
+                    src: "https://assets.nhs.uk/prod/images/A_0218_exercise-main_FKW1X7.width-690.jpg"
+                },
+                clickable: true,
+                href: "#",
+                heading: "Agile phases",
+                headingSize: "m",
+                description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas perferendis rerum ipsum ad, distinctio exercitationem"
+                }) }}
             </li>
         </ul>
     </div>
