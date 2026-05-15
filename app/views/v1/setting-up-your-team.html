@@ -1,0 +1,185 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /app/views/layout.html -->
+{% extends 'layout.html' %}
+<!--
+  In /app/views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!--
+  Use this to set the page name which will appear at the
+  start of the <title> tag, followed by the service name.
+  This is often not needed on the homepage, where only the
+  service name is needed. You can also reuse this variable
+  within the <h1>, where they are the same.
+-->
+{% set pageName = "Setting up your team" %}
+
+<!-- For adding a breadcrumb or back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs and https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+	<ol class="nhsuk-breadcrumb__list">
+		<li class="nhsuk-breadcrumb__list-item">
+			<a class="nhsuk-breadcrumb__link" href="index-2">Home</a>
+		</li>
+		<li class="nhsuk-breadcrumb__list-item">
+			<a class="nhsuk-breadcrumb__link" href="preparing-for-an-assessment">Preparing for a GDS assessment</a>
+		</li>
+		<li class="nhsuk-breadcrumb__list-item">
+			<a class="nhsuk-breadcrumb__link" href="#">Setting up your team</a>
+		</li>
+
+	</ol>
+
+
+</nav>
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+	<div class="nhsuk-grid-column-one-quarter">
+
+
+		<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Guidance</h2>
+
+		<nav class="app-side-nav">
+			<ul class="nhsuk-list app-side-nav__list">
+
+
+				<li class="app-side-nav__item app-side-nav__item--current"><a class="app-side-nav__link"
+						href="setting-up-your-team">Setting up your team</a></li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="agile-phases">Agile phases</a></li>
+
+
+			</ul>
+		</nav>
+
+
+		<br>
+		<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Roles</h2>
+
+		<nav class="app-side-nav">
+			<ul class="nhsuk-list app-side-nav__list">
+				<!-- <li class="app-side-nav__item app-side-nav__item--current"><a class="app-side-nav__link"
+								href="/content/standard-for-creating-health-content">Setting up your team</a></li> -->
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="setting-up-your-team">User
+						research</a></li>
+
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="agile-phase">Design</a>
+				</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="beta-phase">Tech</a>
+				</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="live-phase">Delivery manager</a>
+				</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="live-phase">Product owner</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="nhsuk-grid-column-three-quarters">
+		<h1 class="nhsuk-heading-xl">
+			Setting up your team
+		</h1>
+
+		<p>Setting up your service team for a Government Digital Service (GDS) assessment is key to demonstrating that
+			you have the right skills, roles, and ways of working in place. Assessors want to see a capable,
+			collaborative, multidisciplinary team that meets the GDS Service Standard.</p>
+
+		<h2 class="nhsuk-heading-m">Gather a multidisciplinary team</h2>
+		<p>GDS expects service teams to have all the skills needed to design, build, and run a service from end to end.
+			If these skills are not in place, assessors may decide your service does not meet the standard. In some
+			cases, this can lead to a fail.</p>
+		<p>You should have access to the following roles or skills: </p>
+		<ul>
+			<li><strong>product owner</strong> - owns the vision, prioritises work, and works with stakeholders</li>
+			<li><strong>delivery manager </strong> - makes sure the team can deliver and removes any blockers</li>
+			<li><strong>user researcher </strong> - gathers insights, tests prototypes, and validates assumptions</li>
+			<li><strong>interaction designer </strong> - designs user journeys, wireframes, and prototypes</li>
+			<li><strong>service designer </strong> - designs the end-to-end journey of a service, as well as service
+				blueprints and user journey maps for online and offline routes </li>
+			<li><strong>content designer </strong> - creates clear, user-focused content that meets GDS standards</li>
+			<li><strong>developer </strong> - builds, tests and deploys the service across frontend, backend, and DevOps
+			</li>
+			<li><strong>business analyst </strong> - maps processes and makes sure the product meets its goals and
+				requirements</li>
+			<li><strong>security and privacy lead </strong> - responsible for data protection and security compliance
+			</li>
+			<li><strong>performance analyst </strong> - monitors service performance, and service continuity</li>
+
+		</ul>
+
+		<p>You'll need different skills at different stages of your service. Read guidance on <a
+				href="https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team">GOV.UK about the
+				roles you’ll need at each service phase</a>.</p>
+		<p><strong>Tip:</strong> If you cannot have all the roles full-time, you'll need to explain how you get access
+			to these skills. For example, you might use shared specialists or external consultants.</p>
+
+		<h2 class="nhsuk-heading-m">Define roles and responsibilities</h2>
+
+		<p>For the assessment, be ready to present:</p>
+		<ul>
+			<li>who does what, with clear responsibilities</li>
+			<li>how decisions are made, such as product decisions or design choices</li>
+			<li>how the team works together, including daily stand-ups, retrospectives and sprint planning</li>
+		</ul>
+
+		<h2 class="nhsuk-heading-m">Demonstrate working in an agile, collaborative way</h2>
+
+		<p>Assessment panels expect:</p>
+
+
+		<ul>
+			<li> <strong>regular iterations</strong> - evidence that you work in sprints, release often, and adapt based on feedback
+			</li>
+			<li> <strong>user involvement</strong> - examples of how the team works closely with users throughout delivery
+			</li>
+			<li> <strong>cross-functional collaboration</strong> - designers, developers and researchers working together, not in silos
+			</li>
+			<li> <strong>transparency</strong> - visible ways of working, such as using tools like Jira, Trello or GitHub to track work
+			</li>
+		</ul>
+
+		<h2 class="nhsuk-heading-m">Show strong leadership and governance</h2>
+		<p>Assessment panels expect to see:</p>
+
+		<ul>
+			<li>how the product owner or service owner provides direction and sets a clear vision</li>
+			<li>clear escalation routes and decision-making governance</li>
+			<li>evidence of stakeholder engagement and sponsorship</li>
+			<li>how risks are managed, identified and mitigated</li>
+			<li>what limits the service, such as policy and business decisions, and how you manage those limits</li>
+			<li>each discipline presenting and answering questions directly - it's a concern if only one person speaks for the whole team</li>
+		</ul>
+
+
+		<h2 class="nhsuk-heading-m">Prepare your team for questions</h2>
+        <p>Assessors will ask team members questions based on their area of expertise. You and your team should be ready to answer:</p>
+
+		<ul>
+			<li>how do you incorporate user research and design into your work? </li>
+			<li>how do you ensure the service is accessible and inclusive?</li>
+			<li>how do you manage technical debt and security?</li>
+			<li>what tools do you use for continuous delivery and testing?</li>
+			<li>how does your team handle feedback and improvement?</li>
+			<li>how does the team challenge or work within policy limits?</li>
+		</ul>
+
+		<p>You need to show your team meets each Service Standard. Evidence can come from different areas of work. For example:</p>
+		<ul>
+			<li>design and research work is used to show standards 1 to 5 and 8</li>
+			<li>ways of working as a team, including agile, is used to show standards 6 and 7</li>
+			<li>technical and architectural work is used to show standards 9 to 14</li>
+		</ul>
+
+		<p><strong>Tip:</strong> Simple visuals help assessors understand the team structure, responsibilities, and decision-making quickly.</p>
+	</div>
+</div>
+{% endblock %}

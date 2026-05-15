@@ -161,3 +161,175 @@
     }
 
 }
+
+
+// side nav with visited states to match NHS 
+
+
+			.app-side-nav__item--current {
+				border-left: 4px solid #005eb8;
+				margin-left: -12px;
+				padding-left: 8px;
+			}
+
+			.app-side-nav__link:visited {
+				color: #005eb8;
+			}
+
+			.app-side-nav__item--current .app-side-nav__link {
+				font-weight: 600;
+			}
+
+			.app-side-nav__link {
+				text-decoration: none;
+			}
+
+			a {
+
+				*,
+				:after,
+				:before {
+					box-sizing: inherit;
+				}
+
+				user agent stylesheet a:-webkit-any-link {
+					color: -webkit-link;
+					cursor: pointer;
+					text-decoration: underline;
+				}
+
+				@media (min-width: 40.0625em) {
+					.app-side-nav__list {
+						font-size: 1rem;
+						line-height: 1.3;
+					}
+				}
+
+				.app-side-nav__list {
+					font-size: .875rem;
+					font-weight: 400;
+					line-height: 1.3;
+					margin-bottom: 0;
+				}
+
+				@media (min-width: 40.0625em) {
+
+					.nhsuk-list,
+					ol,
+					ul {}
+
+					.nhsuk-list,
+					ol,
+					ul {
+						font-size: 1rem;
+						line-height: 1.5;
+						list-style-type: none;
+						margin-top: 0;
+						padding-left: 0;
+					}
+
+					.nhsuk-list--bullet,
+					ul {
+						list-style-type: disc;
+						padding-left: 1.25rem;
+					}
+
+					user agent stylesheet ul {
+						list-style-type: disc;
+					}
+
+					body {
+						background-color: #f0f4f5;
+						margin: 0;
+						min-height: 100%;
+						-moz-osx-font-smoothing: grayscale;
+						-webkit-font-smoothing: antialiased;
+						color: #212b32;
+					}
+
+					:root {
+						--nhsuk-frontend-version: "10.4.2";
+						--nhsuk-breakpoint-mobile: 20rem;
+						--nhsuk-breakpoint-tablet: 40.0625rem;
+						--nhsuk-breakpoint-desktop: 48.0625rem;
+						--nhsuk-breakpoint-large-desktop: 61.875rem;
+						--nhsuk-blue-colour: #005eb8;
+						--nhsuk-white-colour: #fff;
+						--nhsuk-black-colour: #212b32;
+						--nhsuk-green-colour: #007f3b;
+						--nhsuk-purple-colour: #330072;
+						--nhsuk-dark-pink-colour: #7c2855;
+						--nhsuk-red-colour: #d5281b;
+						--nhsuk-yellow-colour: #ffeb3b;
+						--nhsuk-dark-blue-colour: #003087;
+						--nhsuk-pale-yellow-colour: #fff9c4;
+						--nhsuk-warm-yellow-colour: #ffb81c;
+						--nhsuk-orange-colour: #ed8b00;
+						--nhsuk-aqua-green-colour: #00a499;
+						--nhsuk-pink-colour: #ae2573;
+						--nhsuk-grey-1-colour: #4c6272;
+						--nhsuk-grey-2-colour: #768692;
+						--nhsuk-grey-3-colour: #aeb7bd;
+						--nhsuk-grey-4-colour: #d8dde0;
+						--nhsuk-grey-5-colour: #f0f4f5;
+						--nhsuk-brand-colour: #005eb8;
+						--nhsuk-text-colour: #212b32;
+						--nhsuk-reverse-text-colour: #fff;
+						--nhsuk-template-background-colour: #d8dde0;
+						--nhsuk-body-background-colour: #f0f4f5;
+						--nhsuk-card-background-colour: #fff;
+						--nhsuk-print-text-colour: #000;
+						--nhsuk-secondary-text-colour: #4c6272;
+						--nhsuk-focus-colour: #ffeb3b;
+						--nhsuk-focus-text-colour: #212b32;
+						--nhsuk-error-colour: #d5281b;
+						--nhsuk-success-colour: #007f3b;
+						--nhsuk-border-colour: #d8dde0;
+						--nhsuk-border-hover-colour: #aeb7bd;
+						--nhsuk-secondary-border-colour: hsla(0, 0%, 100%, .2);
+						--nhsuk-reverse-border-colour: #337ec6;
+						--nhsuk-input-border-colour: #4c6272;
+						--nhsuk-hover-colour: #aeb7bd;
+						--nhsuk-input-background-colour: #fff;
+						--nhsuk-code-colour: #d5281b;
+						--nhsuk-link-colour: #005eb8;
+						--nhsuk-link-visited-colour: #330072;
+						--nhsuk-link-hover-colour: #7c2855;
+						--nhsuk-link-active-colour: #002f5c;
+						--nhsuk-button-colour: #007f3b;
+						--nhsuk-button-text-colour: #fff;
+					}
+
+					html {
+						background-color: #d8dde0;
+						overflow-y: scroll;
+						-webkit-text-size-adjust: 100%;
+						-moz-text-size-adjust: 100%;
+						text-size-adjust: 100%;
+						font-family: Frutiger W01, arial, sans-serif;
+					}
+
+					*,
+					:after,
+					:before {
+						box-sizing: inherit;
+					}
+
+					*,
+					:after,
+					:before {
+						box-sizing: inherit;
+					}
+
+					@font-face {
+						font-display: fallback;
+						font-family: Frutiger W01;
+						font-style: normal;
+						font-weight: 400;
+						src: url(https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2) format("woff2"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff) format("woff");
+					}
+
+                }
+            }
+        
+		

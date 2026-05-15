@@ -1,0 +1,115 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /app/views/layout.html -->
+{% extends 'layout.html' %}
+<!--
+  In /app/views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!--
+  Use this to set the page name which will appear at the
+  start of the <title> tag, followed by the service name.
+  This is often not needed on the homepage, where only the
+  service name is needed. You can also reuse this variable
+  within the <h1>, where they are the same.
+-->
+{% set pageName = "Service Standards" %}
+
+<!-- For adding a breadcrumb or back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs and https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__list-item">
+      <a class="nhsuk-breadcrumb__link" href="index-2">Home</a>
+    </li>
+    <li class="nhsuk-breadcrumb__list-item">
+      <a class="nhsuk-breadcrumb__link" href="#">Service standards</a>
+    </li>
+   
+  </ol>
+  <a class="nhsuk-back-link" href="#">
+    <span class="nhsuk-u-visually-hidden">Back to</span> Hospitals
+  </a>
+
+</nav>
+
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+	<div class="nhsuk-grid-column-one-quarter">
+		<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Guidance</h2>
+
+		<ul class="nhsuk-list">
+			<li><a href="https://www.gov.uk/service-manual/service-standard" class="nhsuk-link nhsuk-link--no-visited-state">GOV.UK Service Standard</a></li>
+			<li><a href="https://service-manual.nhs.uk/standards-and-technology/service-standard" class="nhsuk-link nhsuk-link--no-visited-state">NHS Service Standard </a></li>
+		</ul>
+
+
+	</div>
+
+	<div class="nhsuk-grid-column-three-quarters">
+		<h1 class="nhsuk-heading-xl">NHS and GOV.UK Service Standard</h1>
+		 <p>The GOV.UK Service Standard helps teams design and run public services that meet user needs, deliver value,
+			and work across government.</p>
+
+		<p>It sets out 14 points for creating effective services. If your service is being assessed by the Government
+			Digital Service (GDS), you must meet all points.</p>
+
+		<p>The NHS Service Standard contains the same 14 points, with added guidance for health and social care teams -
+			plus 3 <a href="https://service-manual.nhs.uk/standards-and-technology/service-standard#3-points-specific-to-health-and-social-care">extra points specific to the sector</a>.</p>
+
+		<ul class="nhsuk-grid-row nhsuk-card-group">
+			<li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+				<div class="nhsuk-card nhsuk-card--clickable">
+					<img class="nhsuk-card__img" src="/assets/images/gov.png" alt="">
+					<div class="nhsuk-card__content">
+						<h2 class="nhsuk-card__heading nhsuk-heading-m">
+							<a class="nhsuk-card__link" href="https://www.gov.uk/service-manual/service-standard">GOV.UK
+								Service Standard</a>
+						</h2>
+						<!-- <p class="nhsuk-card__description">The GOV.UK Service Standard helps teams design and run public services that meet user needs, deliver value,
+			and work across government.</p><br>
+			<p>It sets out 14 points for creating effective services. If your service is being assessed by the Government
+			Digital Service (GDS), you must meet all points.</p> -->
+
+					</div>
+				</div>
+
+			</li>
+			<li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+				<div class="nhsuk-card nhsuk-card--clickable">
+					<img class="nhsuk-card__img" src="/assets/images/nhs-blue.png" alt="">
+					<div class="nhsuk-card__content">
+						<h2 class="nhsuk-card__heading nhsuk-heading-m">
+							<a class="nhsuk-card__link"
+								href="https://service-manual.nhs.uk/standards-and-technology/service-standard">NHS Service Standard 
+								</a>
+						</h2>
+						<!-- <p class="nhsuk-card__description">The NHS Service Standard contains the same 14 points, with added guidance for health and social care teams -
+			plus 3 extra points specific to the sector.</p> -->
+
+					</div>
+				</div>
+
+			</li>
+		</ul>
+
+
+		
+
+
+
+
+
+
+	</div>
+</div>
+{% endblock %}

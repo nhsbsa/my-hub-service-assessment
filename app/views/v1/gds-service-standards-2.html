@@ -1,0 +1,355 @@
+```njk
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /app/views/layout.html -->
+{% extends 'layout.html' %}
+
+{% set pageName = "GOV.UK Service Standard" %}
+
+<!-- For adding a breadcrumb or back link -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Service standards</h2>
+
+    <ul class="nhsuk-list">
+      <li><a href="#point-1" class="nhsuk-link nhsuk-link--no-visited-state">1. Understand users</a></li>
+      <li><a href="#point-2" class="nhsuk-link nhsuk-link--no-visited-state">2. Solve a whole problem</a></li>
+      <li><a href="#point-3" class="nhsuk-link nhsuk-link--no-visited-state">3. Joined-up experience</a></li>
+      <li><a href="#point-4" class="nhsuk-link nhsuk-link--no-visited-state">4. Make it simple</a></li>
+      <li><a href="#point-5" class="nhsuk-link nhsuk-link--no-visited-state">5. Accessibility</a></li>
+      <li><a href="#point-6" class="nhsuk-link nhsuk-link--no-visited-state">6. Multidisciplinary team</a></li>
+      <li><a href="#point-7" class="nhsuk-link nhsuk-link--no-visited-state">7. Agile working</a></li>
+      <li><a href="#point-8" class="nhsuk-link nhsuk-link--no-visited-state">8. Iterate and improve</a></li>
+    </ul>
+
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Useful links</h2>
+
+    <ul class="nhsuk-list">
+      <li>
+        <a href="https://www.gov.uk/service-manual/service-standard"
+          class="nhsuk-link nhsuk-link--no-visited-state">
+          GOV.UK Service Standard
+        </a>
+      </li>
+
+      <li>
+        <a href="https://service-manual.nhs.uk/standards-and-technology/service-standard"
+          class="nhsuk-link nhsuk-link--no-visited-state">
+          NHS Service Standard
+        </a>
+      </li>
+
+      <li>
+        <a href="https://service-manual.nhs.uk/design-system"
+          class="nhsuk-link nhsuk-link--no-visited-state">
+          NHS Design System
+        </a>
+      </li>
+
+      <li>
+        <a href="https://design-system.service.gov.uk/"
+          class="nhsuk-link nhsuk-link--no-visited-state">
+          GOV.UK Design System
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">GOV.UK Service Standard</h1>
+
+    <p>
+      The
+      <a href="https://www.gov.uk/service-manual/service-standard">GOV.UK Service Standard</a>
+      helps teams design and run public services that meet user needs, deliver value, and work
+      across government.
+    </p>
+
+    <p>
+      It sets out 14 points for creating effective services. If your service is being assessed by
+      the Government Digital Service (GDS), you must meet all points.
+    </p>
+
+    <p>
+      The
+      <a href="https://service-manual.nhs.uk/standards-and-technology/service-standard">
+        NHS Service Standard
+      </a>
+      contains the same 14 points, with added guidance for health and social care teams – plus
+      <a href="https://service-manual.nhs.uk/standards-and-technology/service-standard#3-points-specific-to-health-and-social-care">
+        3 extra points specific to the sector
+      </a>.
+    </p>
+
+    <p>
+      Use these summaries to understand the GOV.UK Service Standard and how it supports effective
+      service delivery.
+    </p>
+
+    <details class="nhsuk-details" id="point-1">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          1. Understand users and their needs
+        </span>
+      </summary>
+
+      <div class="nhsuk-details__text">
+
+        <p>
+          Start by understanding what users want to achieve, not just the part where they interact
+          with government.
+        </p>
+
+        <p>
+          Knowing the full context helps you meet user needs in a simple and cost-effective way.
+        </p>
+
+        <h2 class="nhsuk-heading-m">What to do</h2>
+
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>do user research</li>
+          <li>build quick prototypes to test assumptions early</li>
+          <li>use analytics and operational data to understand problems</li>
+        </ul>
+
+        <p>
+          <a href="https://www.gov.uk/service-manual/service-standard/point-1-understand-user-needs">
+            Find out more about this point in the Service Standard.
+          </a>
+        </p>
+
+      </div>
+    </details>
+
+    <details class="nhsuk-details" id="point-2">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          2. Solve a whole problem for users
+        </span>
+      </summary>
+
+      <div class="nhsuk-details__text">
+
+        <p>
+          Design services that support the whole user journey by working with other teams and
+          organisations where necessary.
+        </p>
+
+        <h2 class="nhsuk-heading-m">What to do</h2>
+
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>understand constraints like legislation</li>
+          <li>scope services around user needs</li>
+          <li>show how the service solves a whole user problem</li>
+          <li>join up journeys across organisations</li>
+        </ul>
+
+        <p>
+          <a href="https://www.gov.uk/service-manual/service-standard/point-2-solve-a-whole-problem">
+            Find out more about this point in the Service Standard.
+          </a>
+        </p>
+
+      </div>
+    </details>
+
+    <details class="nhsuk-details" id="point-3">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          3. Provide a joined-up experience across all channels
+        </span>
+      </summary>
+
+      <div class="nhsuk-details__text">
+
+        <p>
+          Make sure users get a consistent experience whether they use the service online, by phone,
+          on paper or face to face.
+        </p>
+
+        <h2 class="nhsuk-heading-m">What to do</h2>
+
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>work with front line operations staff</li>
+          <li>test online and offline channels</li>
+          <li>use insight from all channels to improve services</li>
+          <li>support users across digital and non-digital routes</li>
+        </ul>
+
+        <p>
+          <a href="https://www.gov.uk/service-manual/service-standard/point-3-join-up-across-channels">
+            Find out more about this point in the Service Standard.
+          </a>
+        </p>
+
+      </div>
+    </details>
+
+    <details class="nhsuk-details" id="point-4">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          4. Make the service simple to use
+        </span>
+      </summary>
+
+      <div class="nhsuk-details__text">
+
+        <p>
+          Test the service with users to make sure it works for them.
+        </p>
+
+        <h2 class="nhsuk-heading-m">What to do</h2>
+
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>design services that help users succeed first time</li>
+          <li>test usability regularly</li>
+          <li>make services work on a range of devices</li>
+          <li>use NHS and GOV.UK design system components</li>
+        </ul>
+
+        <p>
+          <a href="https://www.gov.uk/service-manual/service-standard/point-4-make-the-service-simple-to-use">
+            Find out more about this point in the Service Standard.
+          </a>
+        </p>
+
+      </div>
+    </details>
+
+    <details class="nhsuk-details" id="point-5">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          5. Make sure everyone can use the service
+        </span>
+      </summary>
+
+      <div class="nhsuk-details__text">
+
+        <p>
+          Inclusive and accessible design helps all users.
+        </p>
+
+        <h2 class="nhsuk-heading-m">What to do</h2>
+
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>meet accessibility standards</li>
+          <li>research with diverse user groups</li>
+          <li>provide assisted digital support</li>
+        </ul>
+
+        <p>
+          <a href="https://www.gov.uk/service-manual/service-standard/point-5-make-sure-everyone-can-use-the-service">
+            Find out more about this point in the Service Standard.
+          </a>
+        </p>
+
+      </div>
+    </details>
+
+    <details class="nhsuk-details" id="point-6">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          6. Have a multidisciplinary team
+        </span>
+      </summary>
+
+      <div class="nhsuk-details__text">
+
+        <p>
+          Build teams with the right mix of skills and expertise.
+        </p>
+
+        <h2 class="nhsuk-heading-m">What to do</h2>
+
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>include operational and technical expertise</li>
+          <li>give teams access to specialists</li>
+          <li>work sustainably with suppliers</li>
+        </ul>
+
+        <p>
+          <a href="https://www.gov.uk/service-manual/service-standard/point-6-have-a-multidisciplinary-team">
+            Find out more about this point in the Service Standard.
+          </a>
+        </p>
+
+      </div>
+    </details>
+
+    <details class="nhsuk-details" id="point-7">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          7. Use agile ways of working
+        </span>
+      </summary>
+
+      <div class="nhsuk-details__text">
+
+        <p>
+          Create services using agile, iterative and user-centred approaches.
+        </p>
+
+        <h2 class="nhsuk-heading-m">What to do</h2>
+
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>inspect, learn and adapt continuously</li>
+          <li>set up agile governance</li>
+          <li>test with stakeholders where appropriate</li>
+        </ul>
+
+        <p>
+          <a href="https://www.gov.uk/service-manual/service-standard/point-7-use-agile-ways-of-working">
+            Find out more about this point in the Service Standard.
+          </a>
+        </p>
+
+      </div>
+    </details>
+
+    <details class="nhsuk-details" id="point-8">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          8. Iterate and improve frequently
+        </span>
+      </summary>
+
+      <div class="nhsuk-details__text">
+
+        <p>
+          Services are never finished. Continue improving throughout the service lifecycle.
+        </p>
+
+        <h2 class="nhsuk-heading-m">What to do</h2>
+
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>test with users regularly</li>
+          <li>improve services based on evidence</li>
+          <li>adapt to changing user and policy needs</li>
+        </ul>
+
+        <p>
+          <a href="https://www.gov.uk/service-manual/service-standard/point-8-iterate-and-improve-frequently">
+            Find out more about this point in the Service Standard.
+          </a>
+        </p>
+
+      </div>
+    </details>
+
+  </div>
+</div>
+
+{% endblock %}
+

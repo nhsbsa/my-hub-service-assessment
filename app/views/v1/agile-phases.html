@@ -1,0 +1,104 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /app/views/layout.html -->
+{% extends 'layout.html' %}
+<!--
+  In /app/views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!--
+  Use this to set the page name which will appear at the
+  start of the <title> tag, followed by the service name.
+  This is often not needed on the homepage, where only the
+  service name is needed. You can also reuse this variable
+  within the <h1>, where they are the same.
+-->
+{% set pageName = "Agile phases" %}
+
+<!-- For adding a breadcrumb or back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs and https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__list-item">
+      <a class="nhsuk-breadcrumb__link" href="index-2">Home</a>
+    </li>
+    <li class="nhsuk-breadcrumb__list-item">
+      <a class="nhsuk-breadcrumb__link" href="preparing-for-an-assessment">Preparing for a GDS assessment</a>
+    </li>
+	 <li class="nhsuk-breadcrumb__list-item">
+      <a class="nhsuk-breadcrumb__link" href="#">Agile phases</a>
+    </li>
+   
+  </ol>
+ 
+
+</nav>
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+	<div class="nhsuk-grid-column-one-quarter">
+
+
+		<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Guidance</h2>
+
+		<nav class="app-side-nav">
+			<ul class="nhsuk-list app-side-nav__list">
+				
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="setting-up-your-team">Setting up your
+						team</a></li>
+				<li class="app-side-nav__item app-side-nav__item--current"><a class="app-side-nav__link"
+						href="agile-phases">Agile phases</a></li>
+
+
+			</ul>
+		</nav>
+
+		<br>
+		<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Roles</h2>
+
+		<nav class="app-side-nav">
+			<ul class="nhsuk-list app-side-nav__list">
+				<!-- <li class="app-side-nav__item app-side-nav__item--current"><a class="app-side-nav__link"
+								href="/content/standard-for-creating-health-content">Setting up your team</a></li> -->
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="setting-up-your-team">User
+						research</a></li>
+			
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="agile-phase">Design</a>
+				</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="beta-phase">Tech</a>
+				</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="live-phase">Delivery manager</a>
+				</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="live-phase">Product owner</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="nhsuk-grid-column-three-quarters">
+		<h1 class="nhsuk-heading-xl">Agile phases</h1>
+
+
+		<h2 class="nhsuk-heading-m"> Discovery</h2>
+		<h2 class="nhsuk-heading-m"> Alpha</h2>
+		<h2 class="nhsuk-heading-m"> Beta</h2>
+		<h2 class="nhsuk-heading-m"> Live</h2>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+{% endblock %}
