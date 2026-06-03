@@ -25,13 +25,13 @@
 <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
   <ol class="nhsuk-breadcrumb__list">
     <li class="nhsuk-breadcrumb__list-item">
-      <a class="nhsuk-breadcrumb__link" href="index-2">Home</a>
+      <a class="nhsuk-breadcrumb__link" href="/index">Home</a>
     </li>
     <li class="nhsuk-breadcrumb__list-item">
       <a class="nhsuk-breadcrumb__link" href="preparing-for-an-assessment">Preparing for a GDS assessment</a>
     </li>
 	 <li class="nhsuk-breadcrumb__list-item">
-      <a class="nhsuk-breadcrumb__link" href="#">Agile phases</a>
+      <a class="nhsuk-breadcrumb__link" href="agile-phases">Agile phases</a>
     </li>
    
   </ol>
@@ -44,6 +44,9 @@
 <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
 <div class="nhsuk-grid-row">
+
+
+
 	<div class="nhsuk-grid-column-one-quarter">
 
 
@@ -52,22 +55,20 @@
 		<nav class="app-side-nav">
 			<ul class="nhsuk-list app-side-nav__list">
 				
-				<li class="app-side-nav__item"><a class="app-side-nav__link" href="setting-up-your-team">Setting up your
-						team</a></li>
-				<li class="app-side-nav__item app-side-nav__item--current"><a class="app-side-nav__link"
-						href="agile-phases">Agile phases</a></li>
-
-
+												<li class="app-side-nav__item"><a class="app-side-nav__link" href="setting-up-your-team">Setting up your team</a></li>
+				<li class="app-side-nav__item app-side-nav__item--current"><a class="app-side-nav__link" href="agile-phases">Agile phases</a></li>
+			
+				
 			</ul>
 		</nav>
 
 		<br>
-		<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Roles</h2>
+		<!--<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Roles</h2>
 
-		<nav class="app-side-nav">
+		 <nav class="app-side-nav">
 			<ul class="nhsuk-list app-side-nav__list">
 				<!-- <li class="app-side-nav__item app-side-nav__item--current"><a class="app-side-nav__link"
-								href="/content/standard-for-creating-health-content">Setting up your team</a></li> -->
+								href="/content/standard-for-creating-health-content">Setting up your team</a></li> --><!--
 				<li class="app-side-nav__item"><a class="app-side-nav__link" href="setting-up-your-team">User
 						research</a></li>
 			
@@ -80,16 +81,72 @@
 				<li class="app-side-nav__item"><a class="app-side-nav__link" href="live-phase">Product owner</a>
 				</li>
 			</ul>
-		</nav>
+		</nav> -->
 	</div>
+	
 	<div class="nhsuk-grid-column-three-quarters">
 		<h1 class="nhsuk-heading-xl">Agile phases</h1>
 
 
-		<h2 class="nhsuk-heading-m"> Discovery</h2>
-		<h2 class="nhsuk-heading-m"> Alpha</h2>
-		<h2 class="nhsuk-heading-m"> Beta</h2>
-		<h2 class="nhsuk-heading-m"> Live</h2>
+		<ul class="nhsuk-grid-row nhsuk-card-group">
+  <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+    <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--primary">
+      <div class="nhsuk-card__content">
+        <h2 class="nhsuk-card__heading nhsuk-heading-m">
+          <a class="nhsuk-card__link" href="discovery-phase">Discovery</a>
+        </h2>
+        <!-- <p class="nhsuk-card__description">About GP services, including how to find and register with a local GP and how to book an appointment</p> -->
+        <svg class="nhsuk-icon nhsuk-icon--chevron-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true">
+          <path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Zm-.3 5.8a1 1 0 1 0-1.5 1.4l2.9 2.8-2.9 2.8a1 1 0 0 0 1.5 1.4l3.5-3.5c.4-.4.4-1 0-1.4Z" />
+        </svg>
+      </div>
+    </div>
+
+  </li>
+  <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+    <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--primary">
+      <div class="nhsuk-card__content">
+        <h2 class="nhsuk-card__heading nhsuk-heading-m">
+          <a class="nhsuk-card__link" href="alpha-phase">Alpha</a>
+        </h2>
+        <!-- <p class="nhsuk-card__description">About NHS hospitals, booking and changing appointments with the NHS e-Referral Service and going into hospital</p> -->
+        <svg class="nhsuk-icon nhsuk-icon--chevron-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true">
+          <path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Zm-.3 5.8a1 1 0 1 0-1.5 1.4l2.9 2.8-2.9 2.8a1 1 0 0 0 1.5 1.4l3.5-3.5c.4-.4.4-1 0-1.4Z" />
+        </svg>
+      </div>
+    </div>
+
+  </li>
+  <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+    <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--primary">
+      <div class="nhsuk-card__content">
+        <h2 class="nhsuk-card__heading nhsuk-heading-m">
+          <a class="nhsuk-card__link" href="beta-phase">Beta</a>
+        </h2>
+        <!-- <p class="nhsuk-card__description">About NHS dental services, how to find an NHS dentist and how much treatment costs</p> -->
+        <svg class="nhsuk-icon nhsuk-icon--chevron-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true">
+          <path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Zm-.3 5.8a1 1 0 1 0-1.5 1.4l2.9 2.8-2.9 2.8a1 1 0 0 0 1.5 1.4l3.5-3.5c.4-.4.4-1 0-1.4Z" />
+        </svg>
+      </div>
+    </div>
+
+  </li>
+  <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+    <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--primary">
+      <div class="nhsuk-card__content">
+        <h2 class="nhsuk-card__heading nhsuk-heading-m">
+          <a class="nhsuk-card__link" href="live-phase">Live</a>
+        </h2>
+        <!-- <p class="nhsuk-card__description">Find out about prescriptions including charges, repeat prescriptions and if you can get free prescriptions</p> -->
+        <svg class="nhsuk-icon nhsuk-icon--chevron-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true">
+          <path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Zm-.3 5.8a1 1 0 1 0-1.5 1.4l2.9 2.8-2.9 2.8a1 1 0 0 0 1.5 1.4l3.5-3.5c.4-.4.4-1 0-1.4Z" />
+        </svg>
+      </div>
+    </div>
+
+  </li>
+</ul>
+
 
 
 

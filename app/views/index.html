@@ -34,51 +34,20 @@
             Service assessments
         </h1>
 
-        <p class="nhsuk-u-margin-bottom-0">Introduction text - Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illo id dolor quam quas
+        <p class="nhsuk-u-margin-bottom-0">Introduction text - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Alias illo id dolor quam quas
             vero assumenda perferendis cum exercitationem reiciendis. Placeat harum illum consequatur incidunt sit
-            voluptatum mollitia qui ea.</p>  
-    </div>
-</div>
+            voluptatum mollitia qui ea.
+        </p>
 
-<div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
-        <hr>
-    </div>
-    <div class="nhsuk-grid-column-three-quarters">
-        <ul class="nhsuk-grid-row nhsuk-card-group">
-            <li class="nhsuk-grid-column-full nhsuk-card-group__item">
-                {{ card({
-                    clickable: true,
-                    secondary: true,
-                    href: "#",
-                    heading: "Book a mock assessment",
-                    headingSize: "m",
-                    description: "Use our service finder to find other health services"
-                }) }}
-            </li>
+        <h2 class="nhsuk-heading-m">Who assesses us</h2>
+        <p>The Department of Health and Social Care (DHSC) asses our services. They check digital health and social care services to make sure they meet government standards. This includes NHS services with more than 100,000 transactions each year.</p> 
+        <p>DHSC use the GOV.UK Service Standard. This is a set of 14 principles for creating services that work well for users. </p>
+        <p>The Government Digital Service (GDS) checks services used by central government departments. GDS was previously called the Central Digital and Data Office (CDDO). </p>
 
-            <li class="nhsuk-grid-column-full nhsuk-card-group__item">
-                {{ card({
-                    clickable: true,
-                    secondary: true,
-                    href: "#",
-                    heading: "Book an assessment",
-                    headingSize: "m",
-                    description: "Use our service finder to find other health services"
-                }) }}
-            </li>
 
-            <li class="nhsuk-grid-column-full nhsuk-card-group__item">
-                {{ card({
-                    clickable: true,
-                    secondary: true,
-                    href: "#",
-                    heading: "Apply to become an assessor",
-                    headingSize: "m",
-                    description: "Use our service finder to find other health services"
-                }) }}
-            </li>
-        </ul>
+
+
     </div>
     <div class="nhsuk-grid-column-one-quarter">
         <h2 class="nhsuk-heading-m">Featured</h2>
@@ -92,24 +61,24 @@
 
 <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-full">
+        <hr>
+        <h2 class="nhsuk-heading-m">Quick links</h2>
+
+    </div>
+
+
+
+</div>
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
         <ul class="nhsuk-grid-row nhsuk-card-group">
             <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
                 {{ card({
-                
-                clickable: true,
-                href: "why-mock-assessment",
-                heading: "Why we do mock assessments",
-                headingSize: "m",
-                description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas perferendis rerum ipsum ad, distinctio exercitationem"
-                }) }}
-            </li>
 
-            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
-                {{ card({
-               
                 clickable: true,
-                href: "gds-service-standards",
-                heading: "NHS and GDS service standards",
+                href: "v1/gds-service-standards",
+                heading: "NHS and GOV.UK Service Standard",
                 headingSize: "m",
                 description: "The Service Standard helps teams to create and run great public services."
                 }) }}
@@ -117,15 +86,78 @@
 
             <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
                 {{ card({
-                
+
                 clickable: true,
-                href: "agile-phases",
-                heading: "Agile phases",
+                href: "v1/preparing-for-an-assessment",
+                heading: "Preparing for an assessment",
                 headingSize: "m",
-                description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas perferendis rerum ipsum ad, distinctio exercitationem"
+                description: "How to set up your team and each discipline for an assessment across the different agile phases."
+                }) }}
+            </li>
+
+            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+                {{ card({
+
+                clickable: true,
+                href: "v1/book-an-assessment",
+                heading: "Book an assessment",
+                headingSize: "m",
+                description: "Book an assessment or mock assessment for your service"
                 }) }}
             </li>
         </ul>
+        <ul class="nhsuk-grid-row nhsuk-card-group">
+            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+                {{ card({
+
+                clickable: true,
+                href: "v1/preparing-to-be-an-assessor",
+                heading: "Preparing to be an assessor",
+                headingSize: "m",
+                description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas perferendis rerum ipsum ad,
+                distinctio exercitationem"
+                }) }}
+
+
+            </li>
+
+            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+                {{ card({
+
+                clickable: true,
+                href: "v1/apply-to-be-an-assessor",
+                heading: "Apply to become an assessor",
+                headingSize: "m",
+                description: "Use this service to apply to become a service assessor"
+                }) }}
+            </li>
+
+            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+                {{ card({
+
+                clickable: true,
+                href: "v1/agile-phases",
+                heading: "Agile phases",
+                headingSize: "m",
+                description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas perferendis rerum ipsum ad,
+                distinctio exercitationem"
+                }) }}
+            </li>
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
 </div>
 {% endblock %}

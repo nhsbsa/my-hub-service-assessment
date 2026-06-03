@@ -1,0 +1,218 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /app/views/layout.html -->
+{% extends 'layout.html' %}
+<!--
+  In /app/views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!--
+  Use this to set the page name which will appear at the
+  start of the <title> tag, followed by the service name.
+  This is often not needed on the homepage, where only the
+  service name is needed. You can also reuse this variable
+  within the <h1>, where they are the same.
+-->
+{% set pageName = "Agile phases" %}
+
+<!-- For adding a breadcrumb or back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs and https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__list-item">
+      <a class="nhsuk-breadcrumb__link" href="/index">Home</a>
+    </li>
+    <li class="nhsuk-breadcrumb__list-item">
+      <a class="nhsuk-breadcrumb__link" href="preparing-for-an-assessment">Preparing for a GDS assessment</a>
+    </li>
+    <li class="nhsuk-breadcrumb__list-item">
+      <a class="nhsuk-breadcrumb__link" href="agile-phases">Agile phases</a>
+    </li>
+    <li class="nhsuk-breadcrumb__list-item">
+      <a class="nhsuk-breadcrumb__link" href="alpha-phase">Alpha phase</a>
+    </li>
+
+  </ol>
+
+
+</nav>
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+
+
+
+  <div class="nhsuk-grid-column-one-quarter">
+
+
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Guidance</h2>
+
+    <nav class="app-side-nav">
+      <ul class="nhsuk-list app-side-nav__list">
+
+        <li class="app-side-nav__item"><a class="app-side-nav__link" href="setting-up-your-team">Setting up your
+            team</a></li>
+        <li class="app-side-nav__item app-side-nav__item--current"><a class="app-side-nav__link"
+            href="agile-phases">Agile phases</a></li>
+
+
+      </ul>
+    </nav>
+
+    <br>
+    <!--<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Roles</h2>
+
+		 <nav class="app-side-nav">
+			<ul class="nhsuk-list app-side-nav__list">
+				<!-- <li class="app-side-nav__item app-side-nav__item--current"><a class="app-side-nav__link"
+								href="/content/standard-for-creating-health-content">Setting up your team</a></li> --><!--
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="setting-up-your-team">User
+						research</a></li>
+			
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="agile-phase">Design</a>
+				</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="beta-phase">Tech</a>
+				</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="live-phase">Delivery manager</a>
+				</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="live-phase">Product owner</a>
+				</li>
+			</ul>
+		</nav> -->
+  </div>
+  <div class="nhsuk-grid-column-three-quarters">
+
+
+
+   <h1>Beta phase</h1>
+
+<p>
+The <strong>Beta phase</strong> is the third stage of the GDS delivery lifecycle. It focuses on the service moving from ideas and prototypes into a <strong>working, usable product</strong>. It builds on learnings from previous phases, and prepares the service for real-world use and eventual Live release.
+</p>
+
+<p>
+The duration of a Beta phase varies, but typically lasts several months. Commonly, the phase can last 3-6 months or 6-12 months. Engagements can be shorter or longer, depending on the complexity of the service.
+</p>
+
+<p>There are two phases within Beta:</p>
+
+<ul>
+  <li><strong>Private Beta:</strong> a limited release to a sample group of real users to test the service in a controlled way</li>
+  <li><strong>Public Beta:</strong> open to the public and often promoted more widely to get broader user feedback</li>
+</ul>
+
+<p>
+The assessment can occur at either <strong>end of Private Beta</strong> (before going Public Beta), or <strong>end of Public Beta</strong> (before going Live).
+</p>
+
+<p>The purpose of Beta is to check if:</p>
+
+<ul>
+  <li>the service meets the <strong>14 points of the GDS Service Standard</strong></li>
+  <li>user needs are being met effectively through research, design and technology</li>
+  <li>the team is prepared for scaling the service</li>
+  <li>the service is secure, accessible and sustainable</li>
+  <li>plans are in place for continuous improvement</li>
+</ul>
+
+<h2>Features</h2>
+
+<p>Your Beta phase will:</p>
+
+<ul>
+  <li>show evidence of user research and how findings have shaped the design of the service</li>
+  <li>be a simple, accessible design, consistent with GOV.UK and NHS design manual patterns</li>
+  <li>be open code, secure, maintainable and cloud ready</li>
+  <li>use a multidisciplinary team and agile ways of working in line with the GS framework</li>
+  <li>measure performance through metrics, KPIs and feedback</li>
+  <li>support users who can't use the online service, through online and assisted digital routes</li>
+  <li>comply with GDPR around data collection, protection and usage</li>
+  <li>show operations readiness, including supporting channels, responding to incidents, and changes in size or scale</li>
+  <li>plan to move into the Live phase</li>
+</ul>
+
+<p><strong>Tip:</strong> User research should continue to run as usual in parallel with the pilot.</p>
+
+<h2>Benefits</h2>
+
+<p>There are many benefits to the Beta stage, including:</p>
+
+<ul>
+  <li>ensuring compliance with the service standard</li>
+  <li>it provides an independent expert review</li>
+  <li>it improves service quality</li>
+  <li>it serves as a checkpoint to avoid a “big bang” release</li>
+  <li>it encourages agile best practice</li>
+  <li>it helps avoid costly mistakes</li>
+  <li>it ensures public digital services are built to a unified standard</li>
+</ul>
+
+<h2>What the GDS Assessment Panel is looking for</h2>
+
+<p>Assessors want to see evidence that:</p>
+
+<ul>
+  <li>You have a functional version of the service that can handle real user interactions, not just prototypes.</li>
+  <li>You've created a working end-to-end service including both online and offline routes.</li>
+  <li>You have real integrations with back-end systems.</li>
+  <li>Technical decisions have been validated through real use.</li>
+  <li>Your infrastructure is ready to scale.</li>
+</ul>
+
+<h2>Artefacts to produce</h2>
+
+<p>You should make sure you include:</p>
+
+<ul>
+  <li>evidence that all user groups identified have been spoken to</li>
+  <li>working Beta service pilot data</li>
+  <li>deployed environments used in private beta</li>
+  <li>integrated components used in private beta, including APIs, identity and data flows</li>
+  <li>usability testing plans and reports</li>
+  <li>accessibility testing outputs</li>
+  <li>research findings summaries</li>
+  <li>updated personas</li>
+  <li>refined interaction prototype journey flows</li>
+  <li>refined user journey maps</li>
+  <li>refined to-be service blueprints</li>
+  <li>evidence of iterations following user feedback and pilot feedback</li>
+  <li>technical architecture documentation</li>
+  <li>infrastructure diagrams</li>
+  <li>integration and API documentation</li>
+  <li>deployment pipelines and CI/CD configurations</li>
+  <li>technical decision logs</li>
+  <li>code repositories</li>
+  <li>security model or security approach document</li>
+  <li>penetration testing reports</li>
+  <li>vulnerability assessments</li>
+  <li>data protection impact assessment, if applicable</li>
+  <li>incident management procedures</li>
+  <li>performance metrics, including CsAT</li>
+  <li>early analytics data, including completion rates, errors and drop-offs</li>
+  <li>operational and service-level indicators (SLIs/SLOs)</li>
+  <li>evidence of iteration based on performance data</li>
+  <li>backlog of changes</li>
+  <li>evidence linking user insight to change and impact</li>
+  <li>updated Beta roadmap</li>
+  <li>WCAG 2.1 AA audit results</li>
+  <li>comms plan or toolkit</li>
+  <li>pilot plan and data results</li>
+  <li>evidence naming of the service in line with GDS and research</li>
+</ul>
+
+<p>
+<strong>Tip:</strong> Have the training needs and plans for frontline staff who support the service been clearly identified?
+</p>
+
+
+  </div>
+</div>
+{% endblock %}

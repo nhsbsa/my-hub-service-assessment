@@ -1,0 +1,221 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /app/views/layout.html -->
+{% extends 'layout.html' %}
+<!--
+  In /app/views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!--
+  Use this to set the page name which will appear at the
+  start of the <title> tag, followed by the service name.
+  This is often not needed on the homepage, where only the
+  service name is needed. You can also reuse this variable
+  within the <h1>, where they are the same.
+-->
+{% set pageName = "Agile phases" %}
+
+<!-- For adding a breadcrumb or back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs and https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__list-item">
+      <a class="nhsuk-breadcrumb__link" href="/index">Home</a>
+    </li>
+    <li class="nhsuk-breadcrumb__list-item">
+      <a class="nhsuk-breadcrumb__link" href="preparing-for-an-assessment">Preparing for a GDS assessment</a>
+    </li>
+    <li class="nhsuk-breadcrumb__list-item">
+      <a class="nhsuk-breadcrumb__link" href="agile-phases">Agile phases</a>
+    </li>
+    <li class="nhsuk-breadcrumb__list-item">
+      <a class="nhsuk-breadcrumb__link" href="alpha-phase">Alpha phase</a>
+    </li>
+
+  </ol>
+
+
+</nav>
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+
+
+
+  <div class="nhsuk-grid-column-one-quarter">
+
+
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Guidance</h2>
+
+    <nav class="app-side-nav">
+      <ul class="nhsuk-list app-side-nav__list">
+
+        <li class="app-side-nav__item"><a class="app-side-nav__link" href="setting-up-your-team">Setting up your
+            team</a></li>
+        <li class="app-side-nav__item app-side-nav__item--current"><a class="app-side-nav__link"
+            href="agile-phases">Agile phases</a></li>
+
+
+      </ul>
+    </nav>
+
+    <br>
+    <!--<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Roles</h2>
+
+		 <nav class="app-side-nav">
+			<ul class="nhsuk-list app-side-nav__list">
+				<!-- <li class="app-side-nav__item app-side-nav__item--current"><a class="app-side-nav__link"
+								href="/content/standard-for-creating-health-content">Setting up your team</a></li> --><!--
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="setting-up-your-team">User
+						research</a></li>
+			
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="agile-phase">Design</a>
+				</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="beta-phase">Tech</a>
+				</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="live-phase">Delivery manager</a>
+				</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="live-phase">Product owner</a>
+				</li>
+			</ul>
+		</nav> -->
+  </div>
+  <div class="nhsuk-grid-column-three-quarters">
+
+
+
+    <h1>Alpha phase</h1>
+
+    <p>
+      The Alpha phase is the second stage of the delivery lifecycle. It focuses on testing ideas, reducing risk, and
+      deciding what to take forward into Beta.
+    </p>
+
+    <p>
+      Alpha is about trying out possible solutions to the problems uncovered in Discovery.
+    </p>
+
+    <p>Teams will:</p>
+
+    <ul>
+      <li>explore different approaches</li>
+      <li>build lightweight prototypes</li>
+      <li>test assumptions</li>
+      <li>learn what is technically feasible</li>
+      <li>gather evidence to decide whether to progress to Beta</li>
+    </ul>
+
+    <p>
+      Alpha is where you experiment, challenge existing approaches, and expect to throw things away.
+    </p>
+
+    <h2>Features</h2>
+
+    <p>Your alpha phase will:</p>
+
+    <ul>
+      <li>typically last 6 -16 weeks, but can last longer in some complicated service frameworks</li>
+      <li>include the creation of multiple prototypes to test ideas</li>
+      <li>test concepts with identified groups of users</li>
+      <li>iterate rapidly based on feedback</li>
+      <li>produce an as-is and to-be service blueprint to be iterated on</li>
+      <li>map user journey flows</li>
+      <li>create user personas and feed into user journey maps</li>
+      <li>refine service concepts</li>
+      <li>explore operational or assisted-digital models</li>
+    </ul>
+
+    <p>You'll identify and test riskiest assumptions. This might include:</p>
+
+    <ul>
+      <li>user behaviour</li>
+      <li>technical feasibility</li>
+      <li>integration challenges</li>
+      <li>policy or legislative constraints</li>
+    </ul>
+
+    <p>Explore technology and systems. This might include:</p>
+
+    <ul>
+      <li>conducting technical audits</li>
+      <li>trying APIs, data integrations, or prototypes</li>
+      <li>assessing compatibility with legacy systems</li>
+    </ul>
+
+    <h2>Benefits</h2>
+
+    <p>By the end of Alpha, teams should have:</p>
+
+    <ul>
+      <li>a recommended solution to take into Beta</li>
+      <li>a solution based on validated learning, evidence, and user testing</li>
+      <li>a working prototype that is not production ready but can show what is viable</li>
+      <li>a high-level roadmap for Beta including technical direction, resource needs, and risks</li>
+      <li>clear ways to measure success and metrics informed by what was tested during alpha</li>
+      <li>evidence you have explored, thrown away and iterated on multiple designs all informed by user research</li>
+    </ul>
+
+    <h2>What the GDS Assessment Panel is looking for</h2>
+
+    <p>Assessors want to see evidence that:</p>
+
+    <ul>
+      <li>The team has participated in experimentation, learning, and risk reduction.</li>
+      <li>You know which solution is most viable.</li>
+      <li>You have explored an offline route so that non-digital users can still access the service.</li>
+      <li>You have tested the riskiest assumptions.</li>
+      <li>You understand technical feasibility.</li>
+      <li>You have evidence that the design is informed by user insight and not lead by only business and technology
+        needs.</li>
+      <li>You have validated prototypes with users.</li>
+      <li>You are ready with a plan to move into Beta.</li>
+      <li>You have a comms plan.</li>
+      <li>You've planned how people will find out the service exists.</li>
+      <li>You have scope of the service.</li>
+    </ul>
+
+    <h2>Artefacts to produce</h2>
+
+    <p>You should make sure you include:</p>
+
+    <ul>
+      <li>the identified user groups (primary, secondary and tertiary)</li>
+      <li>research plans</li>
+      <li>user interviews and UR play backs with insights</li>
+      <li>user needs logs</li>
+      <li>user personas</li>
+      <li>as-is and to-be user journey maps</li>
+      <li>as-is and to-be service blueprints</li>
+      <li>a problem statement</li>
+      <li>a visual of the entire problem space and where the service sits within it</li>
+      <li>policy behind the service</li>
+      <li>stakeholder maps</li>
+      <li>a robust plan for beta</li>
+      <li>a good number of experimental prototype iterations for both online and offline that link into user research
+      </li>
+      <li>technical feasibility assessment</li>
+      <li>API and integration exploration notes</li>
+      <li>technical spikes</li>
+      <li>legacy system constraints analysis</li>
+      <li>data flow sketches</li>
+      <li>define what the Minimum Viable Product (MVP) should include for Beta</li>
+      <li>draft KPIs and success measures</li>
+      <li>beta performance metric hypotheses</li>
+      <li>initial analytics approach</li>
+      <li>comms plan or toolkit</li>
+      <li>risk and constraints log</li>
+      <li>evidence naming of the service in line with GDS and research</li>
+    </ul>
+
+
+  </div>
+</div>
+{% endblock %}

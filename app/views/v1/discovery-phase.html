@@ -1,0 +1,198 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /app/views/layout.html -->
+{% extends 'layout.html' %}
+<!--
+  In /app/views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!--
+  Use this to set the page name which will appear at the
+  start of the <title> tag, followed by the service name.
+  This is often not needed on the homepage, where only the
+  service name is needed. You can also reuse this variable
+  within the <h1>, where they are the same.
+-->
+{% set pageName = "Agile phases" %}
+
+<!-- For adding a breadcrumb or back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs and https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+	<ol class="nhsuk-breadcrumb__list">
+		<li class="nhsuk-breadcrumb__list-item">
+			<a class="nhsuk-breadcrumb__link" href="/index">Home</a>
+		</li>
+		<li class="nhsuk-breadcrumb__list-item">
+			<a class="nhsuk-breadcrumb__link" href="preparing-for-an-assessment">Preparing for a GDS assessment</a>
+		</li>
+		<li class="nhsuk-breadcrumb__list-item">
+			<a class="nhsuk-breadcrumb__link" href="agile-phases">Agile phases</a>
+		</li>
+		<li class="nhsuk-breadcrumb__list-item">
+			<a class="nhsuk-breadcrumb__link" href="discovery-phase">Discovery phase</a>
+		</li>
+
+	</ol>
+
+
+</nav>
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+
+
+
+
+
+	<div class="nhsuk-grid-column-one-quarter">
+
+
+		<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Guidance</h2>
+
+		<nav class="app-side-nav">
+			<ul class="nhsuk-list app-side-nav__list">
+
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="setting-up-your-team">Setting up your
+						team</a></li>
+				<li class="app-side-nav__item app-side-nav__item--current"><a class="app-side-nav__link"
+						href="agile-phases">Agile phases</a></li>
+
+
+			</ul>
+		</nav>
+
+		<br>
+		<!--<h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Roles</h2>
+
+		 <nav class="app-side-nav">
+			<ul class="nhsuk-list app-side-nav__list">
+				<!-- <li class="app-side-nav__item app-side-nav__item--current"><a class="app-side-nav__link"
+								href="/content/standard-for-creating-health-content">Setting up your team</a></li> --><!--
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="setting-up-your-team">User
+						research</a></li>
+			
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="agile-phase">Design</a>
+				</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="beta-phase">Tech</a>
+				</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="live-phase">Delivery manager</a>
+				</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="live-phase">Product owner</a>
+				</li>
+			</ul>
+		</nav> -->
+	</div>
+
+	<div class="nhsuk-grid-column-three-quarters">
+
+
+
+		<h1>Discovery phase</h1>
+
+		<p>
+			A service will not be officially assessed on the Discovery phase, but it’s important to explore it before
+			moving to Alpha. You should ask our inhouse trained assessors to do a discovery review, to ensure your
+			service is ready to move to Alpha.
+		</p>
+
+		<p>
+			SC are currently exploring the value of Discovery reviews. If you'd like your service to have one, contact
+			our inhouse assessors.
+		</p>
+
+		<p>
+			Preparing for a Discovery phase is all about showing that you've explored the problem space and are ready to
+			move into Alpha.
+		</p>
+
+		<p>You should have a clear understanding of:</p>
+
+		<ul>
+			<li>the entire problem space your service sits in</li>
+			<li>the problem your service will directly solve</li>
+			<li>the user needs of those who will use your service</li>
+			<li>the context in which the service operates</li>
+			<li>the risks and opportunities</li>
+			<li>the solution options you've considered</li>
+			<li>your solid plan for Alpha</li>
+		</ul>
+
+		<h2>Features</h2>
+
+		<p>Your discovery phase will:</p>
+
+		<ul>
+			<li>include qualitative and quantitative research methods to understand context and problem</li>
+			<li>include research reports, as-is service blueprints, as-is user journeys, personas</li>
+			<li>include research with access needs and inclusivity</li>
+			<li>typically take 6 to 12 weeks</li>
+			<li>be formed of a multidisciplinary team</li>
+			<li>identify context, pain points, and opportunities</li>
+			<li>explore constraints such as legacy tech and legislation</li>
+			<li>provide a go/ no go for Alpha</li>
+			<li>include a plan for Alpha, if providing a go</li>
+			<li>be more cost effective than going straight to build</li>
+		</ul>
+
+		<h2>Benefits</h2>
+
+		<p>There are many benefits to conducting a discovery phase, including:</p>
+
+		<ul>
+			<li>it forces you to define the problem</li>
+			<li>you’ll carry out research with a range of users</li>
+			<li>it helps establish if there's a need to continue to Alpha</li>
+			<li>it is crucial in the GDS process</li>
+			<li>it will help you understand context around the problem</li>
+			<li>it allows us to define a vision for the service</li>
+			<li>it will help you understand inclusivity and access needs</li>
+			<li>it will help you understand constraints such as legacy technology and legislation</li>
+			<li>you’ll identify measures of success</li>
+			<li>it enables understanding of opportunities</li>
+		</ul>
+
+		<h2>What the GDS Assessment Panel is looking for</h2>
+
+		<p>Assessors want to see evidence that:</p>
+
+		<ul>
+			<li>You understand the problem and the users.</li>
+			<li>You’re not jumping to solutions.</li>
+			<li>You’ve gathered a wide range of insights, not just from stakeholders.</li>
+			<li>You’ve explored multiple approaches.</li>
+			<li>You have a credible plan for Alpha.</li>
+			<li>The service is worth the public funds invested in it.</li>
+		</ul>
+
+		<h2>Artefacts to produce</h2>
+
+		<p>You should make sure you include:</p>
+
+		<ul>
+			<li>research plans</li>
+			<li>user interviews and UR play backs with insights</li>
+			<li>user journeys</li>
+			<li>problem statement</li>
+			<li>policy behind the service</li>
+			<li>a robust plan for alpha</li>
+			<li>rough design ideas proposing a few solutions</li>
+		</ul>
+
+
+
+
+
+
+
+
+	</div>
+</div>
+{% endblock %}
