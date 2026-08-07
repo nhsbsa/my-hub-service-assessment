@@ -24,16 +24,16 @@
 {% block beforeContent %}
 
 <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-  <ol class="nhsuk-breadcrumb__list">
-    <li class="nhsuk-breadcrumb__list-item">
-      <a class="nhsuk-breadcrumb__link" href="/index">Home</a>
-    </li>
-    <li class="nhsuk-breadcrumb__list-item">
-      <a class="nhsuk-breadcrumb__link" href="#">Preparing for a GDS assessment</a>
-    </li>
-   
-  </ol>
- 
+	<ol class="nhsuk-breadcrumb__list">
+		<li class="nhsuk-breadcrumb__list-item">
+			<a class="nhsuk-breadcrumb__link" href="/index">Home</a>
+		</li>
+		<li class="nhsuk-breadcrumb__list-item">
+			<a class="nhsuk-breadcrumb__link" href="#">Preparing for a GDS assessment</a>
+		</li>
+
+	</ol>
+
 
 </nav>
 {% endblock %}
@@ -49,11 +49,16 @@
 
 		<nav class="app-side-nav">
 			<ul class="nhsuk-list app-side-nav__list">
-				
-												<li class="app-side-nav__item"><a class="app-side-nav__link" href="setting-up-your-team">Setting up your team</a></li>
+
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="setting-up-your-team">Setting up your
+						team</a></li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="who-assesses-us">Who assesses us</a></li>
 				<li class="app-side-nav__item"><a class="app-side-nav__link" href="agile-phases">Agile phases</a></li>
-			
-				
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="preparing-to-be-an-assessor">Preparing to be an assessor</a></li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="apply-to-be-an-assessor">Applying to become an assessor</a></li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="book-an-assessment">Book an assessment</a></li>
+
+
 			</ul>
 		</nav>
 
@@ -66,7 +71,7 @@
 								href="/content/standard-for-creating-health-content">Setting up your team</a></li> -->
 				<li class="app-side-nav__item"><a class="app-side-nav__link" href="setting-up-your-team">User
 						research</a></li>
-			
+
 				<li class="app-side-nav__item"><a class="app-side-nav__link" href="agile-phase">Design</a>
 				</li>
 				<li class="app-side-nav__item"><a class="app-side-nav__link" href="beta-phase">Tech</a>
@@ -93,6 +98,16 @@
 			device. They must also support people without internet access and people with limited digital skills.</p>
 
 
+		<h2 class="nhsuk-heading-m">Who assesses us</h2>
+		<p>The Department of Health and Social Care (DHSC) asses our services. They check digital health and social care
+			services to make sure they meet government standards. This includes NHS services with more than 100,000
+			transactions each year. </p>
+		<p>DHSC use the GOV.UK Service Standard. This is a set of 14 principles for creating services that work well for
+			users. </p>
+		<p>The Government Digital Service (GDS) checks services used by central government departments. GDS was
+			previously called the Central Digital and Data Office (CDDO). </p>
+
+
 
 		<h2 class="nhsuk-heading-m">What you need to do</h2>
 		<p>Use the My Hub guidance and checklists to help you and your team: </p>
@@ -111,32 +126,99 @@
 
 		<h2>Quick links</h2>
 
-		<ul class="nhsuk-grid-row nhsuk-card-group">
-  <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-    <div class="nhsuk-card nhsuk-card--clickable">
-      <div class="nhsuk-card__content">
-        <h2 class="nhsuk-card__heading nhsuk-heading-m">
-          <a class="nhsuk-card__link" href="setting-up-your-team">Setting up your team</a>
-        </h2>
-        <p class="nhsuk-card__description">Gathering your team, defining roles, working in agile, showing leadership and governance and preparing for questions</p>
-      </div>
-    </div>
+		<div class="nhsuk-grid-row">
+			<div class="nhsuk-grid-column-full">
+				<ul class="nhsuk-grid-row nhsuk-card-group">
+					<li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+						{{ card({
 
-  </li>
-  <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-    <div class="nhsuk-card nhsuk-card--clickable">
-      <div class="nhsuk-card__content">
-        <h2 class="nhsuk-card__heading nhsuk-heading-m">
-          <a class="nhsuk-card__link" href="agile-phases">Agile phases</a>
-        </h2>
-        <p class="nhsuk-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illo id dolor quam quas vero assumenda perferendis cum exercitationem reiciendis.</p>
-      </div>
-    </div>
+						clickable: true,
+						href: "v1/gds-service-standards",
+						heading: "NHS and GOV.UK Service Standard",
+						headingSize: "m",
+						description: "The Service Standard helps teams to create and run great public services."
+						}) }}
+					</li>
 
-  </li>
-  
-</ul>
+					<li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+						{{ card({
 
+						clickable: true,
+						href: "v1/who-assesses-us",
+						heading: "Who assesses us",
+						headingSize: "m",
+						description: "How to set up your team and each discipline for an assessment across the different
+						agile phases."
+						}) }}
+					</li>
+
+					<li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+						{{ card({
+
+						clickable: true,
+						href: "v1/book-an-assessment",
+						heading: "Book an assessment",
+						headingSize: "m",
+						description: "Book an assessment or mock assessment for your service"
+						}) }}
+					</li>
+				</ul>
+				<ul class="nhsuk-grid-row nhsuk-card-group">
+					<li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+						{{ card({
+
+						clickable: true,
+						href: "v1/preparing-to-be-an-assessor",
+						heading: "Preparing to be an assessor",
+						headingSize: "m",
+						description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas perferendis rerum
+						ipsum ad,
+						distinctio exercitationem"
+						}) }}
+
+
+					</li>
+
+					<li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+						{{ card({
+
+						clickable: true,
+						href: "v1/apply-to-be-an-assessor",
+						heading: "Apply to become an assessor",
+						headingSize: "m",
+						description: "Use this service to apply to become a service assessor"
+						}) }}
+					</li>
+
+					<li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+						{{ card({
+
+						clickable: true,
+						href: "v1/agile-phases",
+						heading: "Agile phases",
+						headingSize: "m",
+						description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas perferendis rerum
+						ipsum ad,
+						distinctio exercitationem"
+						}) }}
+					</li>
+				</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
 
 
 
